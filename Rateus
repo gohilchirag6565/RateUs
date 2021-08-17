@@ -1,0 +1,9 @@
+// set this to button click event!
+void OnRateButtonClick()
+{
+     #if UNITY_ANDROID
+     Application.OpenURL("market://details?id=<=YOUR_APP_ID=>");
+     #elif UNITY_IPHONE
+     Application.OpenURL("itms-apps://itunes.apple.com/app/id<=YOUR_APP_ID=>");
+     #endif
+}
